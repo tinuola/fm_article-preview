@@ -15,22 +15,44 @@
     <title>Article Preview Component | Frontend Mentor</title>
   </head>
 <body>
-  <h1>Project Name - A Frontend Mentor Project</h1>
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
+  <h1 class="sr-only">Project Name - A Frontend Mentor Project</h1>
+  <main class="container">
+    <article class="card">
+      <section class="card-hero">
+      </section>
+      <section class="card-body">
+        <h2>Shift the overall look and feel by adding these wonderful 
+  touches to furniture in your home</h2>
+        <p> Ever been in a room and felt like something was missing? Perhaps 
   it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="fm-attribution-row">
+  to help you make any room feel complete.</p>
+      </section>
+      <section class="card-footer">
+        <div class="card-byline-label">
+          <img src="./assets/images/avatar-michelle.jpg" alt="Michelle Appleton, article author">
+          <div class="card-byline-text">
+            <p>Michelle Appleton</p>
+            <p>28 Jun 2020</p>
+          </div>
+        </div>
+        <!-- <div class="share-group">
+          <p>Share</p>
+          <ul>
+            <li><img src="./assets/images/icon-facebook.svg" alt=""></li>
+            <li><img src="./assets/images/icon-twitter.svg" alt=""></li>
+            <li><img src="./assets/images/icon-pinterest.svg" alt=""></li>
+          </ul>
+        </div> -->
+        <div class="share-icon">
+          <img src="./assets/images/icon-share.svg" alt="Share icon">
+        </div>
+        
+      </section>
+    </article>
+  </main>
+  <footer class="fm-attribution-row">
     <p class="fm-attribution">Challenge by <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/" target="_blank">Frontend Mentor</a></p>
     <p class="fm-attribution">Coded by <a href="https://github.com/tinuola/fm_article-preview" target="_blank">TechTinu</a></p>
-  </div>
+  </footer>
 </body>
 </html>

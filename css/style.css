@@ -3,14 +3,18 @@
   --gray-blue: hsl(212, 23%, 69%);
   --light-gray-blue: hsl(210, 46%, 95%);
   --dark-blue: hsl(214, 17%, 51%);
+  --white: hsl(0, 0%, 100%);
   --primary-font: 'Manrope', sans-serif;
 }
 
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  font-size: 13px;
   font-family: var(--primary-font);
+  color: var(--dark-gray-blue);
+  background-color: var(--light-gray-blue);
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 .sr-only {
@@ -25,8 +29,94 @@ body {
   position: absolute;  
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.card {
+  max-width: 320px;
+  border-radius: .5rem;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.card-hero {
+  background-image: url(../assets/images/drawers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+}
+
+.card-body {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.card-body,
+.card-footer {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.card-body h2 {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: .85rem;
+  line-height: 1.65;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-byline-label {
+  flex-basis: 70%;
+  display: flex;
+}
+
+.card-byline-label img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: .75rem;
+}
+
+.card-byline-text p:nth-child(1) {
+  font-weight: 700;
+}
+
+.card-byline-text p:nth-child(2) {
+  color: var(--gray-blue);
+}
+
+.share-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--light-gray-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fm-attribution-row {
+  padding: 1rem;
+}
+
 .fm-attribution {
   font-size: 12px;
+  text-align: center;
 }
 
 .fm-attribution a {
