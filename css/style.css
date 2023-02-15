@@ -48,7 +48,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 200px;
+  height: 170px;
 }
 
 .card-body {
@@ -76,11 +76,14 @@ body {
 .card-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  position: relative;
 }
 
-.card-byline-label {
+.card-byline-label,
+.share-group {
   flex-basis: 70%;
   display: flex;
 }
@@ -100,13 +103,36 @@ body {
   color: var(--gray-blue);
 }
 
-.share-icon {
+.share-icon-wrapper {
   width: 40px;
   height: 40px;
   background: var(--light-gray-blue);
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.share-icon--light {
+  display: none;
+}
+
+.share-icons-group {
+  display: none;
+}
+
+.share-icons-group p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: .75rem;
+}
+
+.share-icons-group ul {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
