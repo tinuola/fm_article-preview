@@ -53,6 +53,7 @@ body {
   .card {
     max-width: 785px;
     display: flex;
+    overflow: unset;
   }
 }
 
@@ -127,8 +128,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.75rem;
   position: relative;
+  /* background: var(--dark-gray-blue); */
 }
 
 @media (min-width: 1024px){
@@ -176,11 +178,13 @@ body {
 
 .share-icons-group {
   display: none;
+  /* display: flex; */
+  
 }
 
 @media(min-width: 1024px){
   .share-icons-group {
-    background: red;
+    background: var(--dark-gray-blue);
     position: absolute;
     top: 53%;
     right: -8%;
@@ -189,6 +193,7 @@ body {
     justify-content: space-around;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
+    display: none;
   }
 
   .share-icons-group::before {
@@ -198,18 +203,19 @@ body {
     height: 25px;
     background: transparent;
     position: absolute;
-    top: 50px;
+    top: 45px;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-top: 12px solid red;
+    border-top: 12px solid var(--dark-gray-blue);
   }
 }
 
 .share-icons-group p {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--gray-blue);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   margin-right: .75rem;
 }
 
