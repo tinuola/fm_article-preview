@@ -36,6 +36,12 @@ body {
   margin-top: 4rem;
 }
 
+@media(min-width: 1024px){
+  .container {
+    margin-top: 0;
+  }
+}
+
 .card {
   max-width: 320px;
   border-radius: .5rem;
@@ -69,6 +75,7 @@ body {
 @media (min-width: 1024px){
   .card-content-wrapper {
     flex-basis: 62%;
+    position: relative;
   }
 }
 
@@ -126,7 +133,9 @@ body {
 
 @media (min-width: 1024px){
   .card-footer {
+    padding-top: 0;
     padding-bottom: 2rem;
+    position: unset;
   }
 }
 
@@ -167,6 +176,33 @@ body {
 
 .share-icons-group {
   display: none;
+}
+
+@media(min-width: 1024px){
+  .share-icons-group {
+    background: red;
+    position: absolute;
+    top: 53%;
+    right: -8%;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .share-icons-group::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    position: absolute;
+    top: 50px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid red;
+  }
 }
 
 .share-icons-group p {
