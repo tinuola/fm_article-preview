@@ -1,21 +1,21 @@
 
-const shareIconElem = document.querySelector('.share-icon')
+const shareIcon = document.querySelector('.share-icon')
 
 const iconDark = document.querySelector('.share-icon--dark')
 
 const iconLight = document.querySelector('.share-icon--light')
 
-const cardFooterElem = document.querySelector('.card-footer')
+const cardFooter = document.querySelector('.card-footer')
 
-const cardBylineElem = document.querySelector('.card-byline-label')
+const cardByline = document.querySelector('.card-byline-label')
 
-const shareGroupElem = document.querySelector('.share-icon-group')
+const shareIconGroup = document.querySelector('.share-icon-group')
 
-  shareIconElem.addEventListener('click', function(){
+  shareIcon.addEventListener('click', function(){
     this.classList.toggle('share-icon--lightbg')
     iconDark.classList.toggle('hide-icon')
     iconLight.classList.toggle('show-icon')
-    cardFooterElem.classList.toggle('card-footer-dark')
-    cardBylineElem.classList.toggle('hide-byline-label')
-    shareGroupElem.classList.toggle('show-icon-group')
+    cardFooter.classList.toggle('card-footer-dark')
+    cardByline.classList.toggle('hide-byline-label')
+    shareIconGroup.classList.toggle('show-icon-group')
   })
