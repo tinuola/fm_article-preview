@@ -177,21 +177,22 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background: var(--light-gray-blue);
   display: flex;
   justify-content: center;
-  align-items: center;  background: var(--light-gray-blue);
+  align-items: center;  
 }
 
 .share-icon--light {
   display: none;
 }
 
-.share-icon--lightbg{
+.share-icon--bground{
   background: var(--gray-blue);
 }
 
 @media(min-width: 1024px){
-  .share-icon--lightbg{
+  .share-icon--bground{
     background: var(--dark-gray-blue);
   }
 }
