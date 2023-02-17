@@ -82,7 +82,7 @@ body {
 
 .card-body {
   padding-top: 2.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .card-body,
@@ -128,7 +128,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: .75rem;
-  padding-bottom: .75rem;
+  padding-bottom: 1rem;
   position: relative;
 }
 
