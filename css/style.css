@@ -283,12 +283,6 @@ body {
   text-align: center;
 }
 
-@media (min-width: 1024px){
-  .fm-attribution {
-    text-align: right;
-  }
-}
-
 .fm-attribution a {
   color: hsl(228, 45%, 44%);
 }
